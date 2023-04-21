@@ -57,7 +57,194 @@ switch( n ){
 19.	Напишите функцию addN(n), которая вернёт другую функцию. Возвращенная функция должна складывать получаемый аргумент с аргументом n возвращающей функции. 
 <br>
 20.	Напишите функцию words(),  которая в зависимости от переданного в нее целочисленного аргумента n, будет выводить слово «товар» в нужно форме («12 товаров», но «22 товара»). По умолчанию аргумент d должен иметь значение 0
+<br>
+     <p>
 
+<head> 
+    <link rel="stylesheet" href="index.css">
+<title>1</title>
+</head>
+<style>
+body {
+        background-image: url('q.jpg'); 
+        background-repeat: no-repeat;
+		text-align:center;
+      }
+</style>
+   
+   <div class="menu" >
+ <ul >
+<a href="#"> </a>
+<a href="#"> </a>
+</ul>
+
+</div>
+<hr>
+ <div class="heading">
+ <!--1-->
+<script> 
+if (true) {
+  console.log(1);
+}
+else {
+				console.log(0);
+			}
+
+</script> 
+ <!--2-->
+ <script> 
+let m=60
+			if (m > 50) {	var n = "большое";}
+			 else {var n = "маленькое";}
+       document.writeln("2задание----"+n);
+  </script> <p></p>
+   <!--3-->
+   <script> 
+    var i = 2;
+			var res = 0;
+			while( i < 9 )
+      {console.log( i++ );
+			res++;
+			}
+			document.writeln("3задание----"+res);
+     </script> <p></p>
+      <!--4-->
+   <script> 
+var i = 45;
+			var s = "";
+			while (i <= 67) 
+      {
+				s +=i + "-";
+				i++;
+			}
+      document.writeln("4задание----"+s);
+    </script><p></p>
+       <!--5-->
+   <script> 
+    var i = 50;
+			var s = "";
+			while (i <= 670) 
+      {
+				s +=i + "-";
+				i += 10;
+			}
+          document.writeln("5задание----"+s);
+        </script>
+        <p></p>
+        <!--6-->
+    <script> 
+    var s = "";
+			
+			for (let i = 45; i <= 67; i++) 
+      {
+				s +=i + "-";
+			}
+			for (let i = 50; i <= 670; i += 10)
+       {
+				s +=i + "-";
+			}
+           document.writeln("6задание----"+s);
+         </script>
+         <p></p>
+<!--7--> <p></p>
+<script>  
+let a = 3
+switch (a) {
+  case 1:
+  document.writeln( 'один' );break;
+  case 2:
+  document.writeln( 'два' );break;
+  case 3:
+  document.writeln( 'три' );break; }
+ </script>
+ <!--8--> <p></p>
+<script>  
+for (var i = 0; i < 10; i++) 
+{
+				document.write('<img src="qq.jpg">') ;
+			}
+   </script>
+   <!--9--> <p></p>
+   <script>  
+    let size = 120;
+	 let unit = "Кб";
+switch (unit) {
+  case "Кб":
+  document.writeln(size * 1024+"Кб");break;
+  case "Мб":
+  document.writeln( size * 1024 * 1024+"Mб" );break;
+  case "Гб":
+  document.writeln(size * 1024 * 1024 * 1024+"Гб" );break; }
+       </script>
+ <!--11--> <p></p>
+ <script>  
+function hello1() {
+  return "Привет, JavaScript!";
+}
+document.writeln("Привет, JavaScript!");
+</script>
+<!--12--> <p></p>
+<script>  
+ function qwq(name) {
+			if (name) {return "Привет, " + name;} 
+      else {return "Привет гость";}
+      }
+      document.writeln(qwq("Димас"));
+
+  </script>
+  <!--13--> <p></p>
+<script>  
+ function qwq13(n, m) {return n * m;}
+ document.writeln(qwq13(2,3));
+   </script>
+
+   <!--14--> <p></p>
+<script>  
+function repeat(str, n = 2) {
+    return str.repeat(n);
+}
+document.writeln(repeat('',4));
+   
+    </script>
+   
+   <!--15--> <p></p>
+<script>  
+  function color(r = 0, g = 0, b = 0) {
+  return "rgb(" + r + ", " + g + ", " + b  + ")";
+}
+document.writeln(color(23, 100));
+    </script>
+
+      <!--17--> <p></p>
+<script>  
+  function mq(a, b)
+{
+    return mul(a, b);
+}
+function mul(a, b)
+{
+    return a*b;
+}
+console.log(mq(2, 4));
+
+    </script>
+ <!--18--> <p></p>
+ <script>  
+function operation (m, n, o){return o(m, n)}
+</script>
+
+ <!--19--> <p></p>
+ <script> 
+function add(n) {
+  return function (m) {
+    return n+m;
+  }
+}
+</script>
+</div>
+</body>
+
+        </p>
 
    <h2 style="text-align: center">ВЫВОД</h2>
     JavaScript – это язык программирования, который используют разработчики для создания интерактивных веб-страниц. Функции JavaScript могут улучшить удобство взаимодействия пользователя с веб-сайтом: от обновления ленты новостей в социальных сетях и до отображения анимации и интерактивных карт. JavaScript является языком программирования при разработки скриптов для выполнения на стороне клиента, что делает его одной из базовых технологий во всемирной сети Интернет.
