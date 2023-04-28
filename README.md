@@ -21,16 +21,13 @@
 </div>
 </body>
 
-        </p>
+ 
 
 <html> 
 <head> 
     <link rel="stylesheet" href="index.css">
 <title>1</title>
 </head>
-<style>
-
-</style>
    
    <div class="menu" >
 
