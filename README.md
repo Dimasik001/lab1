@@ -22,18 +22,14 @@
 </body>
 
         </p>
-<p>
+
 <html> 
 <head> 
     <link rel="stylesheet" href="index.css">
 <title>1</title>
 </head>
 <style>
-body {
-        background-image: url('q.jpg'); 
-        background-repeat: no-repeat;
-		text-align:center;
-      }
+
 </style>
    
    <div class="menu" >
@@ -47,6 +43,7 @@ body {
 <a href="seven.html">7 задание</a><br>
 <a href="vos.html">8 задание</a><br>
 <a href="nine.html">9 задание</a><br>
+<a href="ten.html">10 задание</a><br>
 </div>
 <hr>
  <div class="heading">
