@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <link rel="stylesheet" href="three.css">
+<title>1</title>
+</head>
+<style>
+body {
+        background-image: url('q.jpg'); 
+        background-repeat: no-repeat;
+		text-align:center;
+      }
+</style>
+   
+   <div class="menu" >
+
+<a href="one.html">1 задание</a><br>
+<a href="two.html">2 задание</a><br>
+<a href="three.html">мы тут</a><br>
+<a href="for.html">4 задание</a><br>
+<a href="five.html">5 задание</a><br>
+<a href="six.html">6 задание</a><br>
+<a href="seven.html">7 задание</a><br>
+<a href="vos.html">8 задание</a><br>
+<a href="nine.html">9 задание</a><br>
+</div>
+<hr>
+ <div class="heading">
+    <p>3.	Дано дерево, надо найти сумму всех вершин.</p>
+    <img src="qwe.png"><br>
+<!--3-->
+<script>   
+const Derevo = {
+  value: 2,            
+  left: {              
+    value: 1,          
+    left: null,       
+    right: null       
+  },
+  right: {             
+    value: 3,          
+    left: null,        
+    right: {          
+      value: 4,        
+      left: null,      
+      right: null      
+    },
+  }
+}
+function sumTree(Derevo) {
+  if (!Derevo) {
+    return 0;
+  }
+  return Derevo.value + sumTree(Derevo.left) + sumTree(Derevo.right);
+}
+document.writeln(sumTree(Derevo));
+</script>
+</div>
+</body>
+
+</html> 

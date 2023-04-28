@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <link rel="stylesheet" href="two.css">
+<title>1</title>
+</head>
+<style>
+body {
+        background-image: url('q.jpg'); 
+        background-repeat: no-repeat;
+		text-align:center;
+      }
+</style>
+   
+   <div class="menu" >
+
+<a href="one.html">1 задание</a><br>
+<a href="two.html">мы тут</a><br>
+<a href="three.html">3 задание</a><br>
+<a href="for.html">4 задание</a><br>
+<a href="five.html">5 задание</a><br>
+<a href="six.html">6 задание</a><br>
+<a href="seven.html">7 задание</a><br>
+<a href="vos.html">8 задание</a><br>
+<a href="nine.html">9 задание</a><br>
+</div>
+<hr>
+ <div class="heading">
+    <p>2.Дана функция, она принимает в качестве аргументов строки '*', '1', 'b', '1c',
+         реализуйте ее так, что бы она вернула строку '1*b*1c' </p>
+<!--2-->
+<script>   
+function task() {
+  return [].slice.call(arguments, 1).join(arguments[0])
+}
+document.writeln(task('*', '1', 'b', '1c'));
+</script>
+</div>
+</body>
+
+</html> 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <link rel="stylesheet" href="vos.css">
+<title>1</title>
+</head>
+<style>
+body {
+        background-image: url('q.jpg'); 
+        background-repeat: no-repeat;
+		text-align:center;
+      }
+</style>
+   
+   <div class="menu" >
+
+<a href="one.html">1 задание</a><br>
+<a href="two.html">2 задание</a><br>
+<a href="three.html">3 задание</a><br>
+<a href="for.html">4 задание </a><br>
+<a href="five.html">5 задание</a><br>
+<a href="six.html">6 задание</a><br>
+<a href="seven.html">7 задание</a><br>
+<a href="vos.html">мы тут</a><br>
+<a href="nine.html">9 задание</a><br>
+</div>
+<hr>
+ <div class="heading">
+    <p>8.	Реализовать сортировку пузырьком.</p>
+    <script>
+        document.writeln("40,3,7,10,13,90")
+    </script> <br>
+    <script>
+        var m = [40, 3, 7,10 ,13, 90],
+        count = m.length - 1;
+    for (var i = 0; i < count; i++) {
+      for (var j = 0; j < count - i; j++) {
+          if (m[j] > m[j + 1]) {
+              max = m[j];
+              m[j] = m[j + 1];
+              m[j + 1] = max;
+          }
+      }
+    }
+    document.writeln(m)
+</script>
+</div>
+</body>
+
+</html> 

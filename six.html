@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <link rel="stylesheet" href="six.css">
+<title>1</title>
+</head>
+<style>
+body {
+        background-image: url('q.jpg'); 
+        background-repeat: no-repeat;
+		text-align:center;
+      }
+</style>
+   
+   <div class="menu" >
+
+<a href="one.html">1 задание</a><br>
+<a href="two.html">2 задание</a><br>
+<a href="three.html">3 задание</a><br>
+<a href="for.html">4 задание </a><br>
+<a href="five.html">5 задание</a><br>
+<a href="six.html">мы тут</a><br>
+<a href="seven.html">7 задание</a><br>
+<a href="vos.html">8 задание</a><br>
+<a href="nine.html">9 задание</a><br>
+</div>
+<hr>
+ <div class="heading">
+    <p>6.	Есть несколько слов, определить состоят ли они из одних и тех же букв('кот', 'ток', 'окт') </p>
+    <!--5-->
+    <script>   
+function q(slovo1, slovo2, slovo3) {
+  let w1 = slovo1.split("").sort().join("");
+  let w2 = slovo2.split("").sort().join("");
+  let w3 = slovo3.split("").sort().join("");
+
+  return w1 == w2 && w1 == w3;
+}
+let slovo1 = "кот";
+let slovo2 = "ток";
+let slovo3 = "окт";
+if (q(slovo1, slovo2, slovo3)) {
+    document.writeln("Слова состоят из одних и тех же букв");
+} else {
+    document.writeln("Слова не состоят из одних и тех же букв");
+}
+    </script>
+</div>
+</body>
+
+</html> 

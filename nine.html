@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <link rel="stylesheet" href="nine.css">
+<title>1</title>
+</head>
+<style>
+body {
+        background-image: url('q.jpg'); 
+        background-repeat: no-repeat;
+		text-align:center;
+      }
+</style>
+   
+   <div class="menu" >
+
+<a href="one.html">1 задание</a><br>
+<a href="two.html">2 задание</a><br>
+<a href="three.html">3 задание</a><br>
+<a href="for.html">4 задание </a><br>
+<a href="five.html">5 задание</a><br>
+<a href="six.html">6 задание</a><br>
+<a href="seven.html">7 задание</a><br>
+<a href="vos.html">8 задание</a><br>
+<a href="nine.html">мы тут</a><br>
+<a href="ten.html">10 задание</a><br>
+</div>
+<hr>
+ <div class="heading">
+    <p>9.	Обратная польская нотация.</p>
+    <script>
+        document.writeln("27*")
+    </script> <br>
+
+    <script>
+  function pol(newExpr) {
+  let massiv = newExpr.split(" ");
+  let stack =[];
+  if(massiv == ''){
+    return 0;
+  }
+  for(let i=0; i<massiv.length; i++) {
+     if(!isNaN(massiv[i]) && isFinite(massiv[i])) {
+       stack.push(massiv[i]);
+     }else {
+     let a = stack.pop();
+     let b = stack.pop();
+       if(massiv[i] == "+") {
+          stack.push(parseInt(a) + parseInt(b));
+       } else if(massiv[i] == "-") {
+           stack.push(parseInt(b) - parseInt(a));
+       } else if(massiv[i] == "*") {
+           stack.push(parseInt(a) * parseInt(b));
+       } else if(massiv[i] == "/") {
+           stack.push(parseInt(b) / parseInt(a));
+       } else if(massiv[i] == "^") {
+           stack.push(Math.pow(parseInt(b), parseInt(a)));
+       }
+     }
+}
+  if(stack.length > 1) {
+    return "ERROR";
+  }else {
+   return stack[0];
+  }
+}
+document.writeln(pol('2 7 *'));
+document.writeln()
+</script>
+</div>
+</body>
+
+</html> 
