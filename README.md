@@ -1,6 +1,6 @@
 <h1 align= "center"> МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ «САХАЛИНСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ»</h1>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<p align= "center">Лабораторная работа №8</p><br><br><br><br><br><br><br><br>
+<p align= "center">Лабораторная работа №9</p><br><br><br><br><br><br><br><br>
 <p align= "right">Выполнил: Андреев Д.В.</p><br><br><br><br><br><br><br><br>
 <p align="center">г. Южно-Сахалинск <br> 2023 год</p><br><br><br><br><br><br><br><br>
 <h2 style="text-align: center">Введение</h2>
@@ -22,7 +22,39 @@
 </body>
 
         </p>
+<p>
+<html> 
+<head> 
+    <link rel="stylesheet" href="index.css">
+<title>1</title>
+</head>
+<style>
+body {
+        background-image: url('q.jpg'); 
+        background-repeat: no-repeat;
+		text-align:center;
+      }
+</style>
+   
+   <div class="menu" >
 
+<a href="one.html">1 задание</a><br>
+<a href="two.html">2 задание</a><br>
+<a href="three.html">3 задание</a><br>
+<a href="for.html">4 задание</a><br>
+<a href="five.html">5 задание</a><br>
+<a href="six.html">6 задание</a><br>
+<a href="seven.html">7 задание</a><br>
+<a href="vos.html">8 задание</a><br>
+<a href="nine.html">9 задание</a><br>
+</div>
+<hr>
+ <div class="heading">
+ 
+</div>
+</body>
+
+</html> </p>
    <h2 style="text-align: center">ВЫВОД</h2>
     JavaScript – это язык программирования, который используют разработчики для создания интерактивных веб-страниц. Функции JavaScript могут улучшить удобство взаимодействия пользователя с веб-сайтом: от обновления ленты новостей в социальных сетях и до отображения анимации и интерактивных карт. JavaScript является языком программирования при разработки скриптов для выполнения на стороне клиента, что делает его одной из базовых технологий во всемирной сети Интернет.
  
