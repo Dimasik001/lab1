@@ -26,7 +26,7 @@
 <html> 
 <head> 
     <link rel="stylesheet" href="index.css">
-<title>1</title>
+
 </head>
    
    <div class="menu" >
