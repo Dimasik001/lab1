@@ -26,28 +26,18 @@ body {
 </div>
 <hr>
  <div class="heading">
-    <p>7.	От них же. Числа от 1 до 100 лежат в массиве, они хаотично перемешанные,
-         от туда изъяли одно число, надо найти, что это за число.  </p>
+    <p>7.	Минимум. Напишите функцию min, принимающую два аргумента,
+       и возвращающую минимальный из них.  </p>
+     Первые - 222, 10<br>
+    Вторые - 1, -110<br>
     <!--5-->
     <script>   
- let massiv = [];
-//
-for (let i = 1; i <= 100; i++) {
-  massiv.push(i);
-}
-
-// 
-for (let i = massiv.length - 1; i > 0; i--) {
-  let j = Math.floor(Math.random() * (i + 1));
-  [massiv[i], massiv[j]] = [massiv[j], massiv[i]];
-}
-
-// 
-let S = massiv.splice((Math.random()), 1);
-
-document.writeln(`Исходный массив чисел: ${massiv}`);
-document.writeln(`Изъятое число: ${S}`);
-    document.writeln(dates)
+ function min(a, b) {
+    return (a<b ? a : b)
+  }
+  document.writeln(min(222,10)); 
+  document.writeln(min(1,-110));
+   
     </script>
 </div>
 </body>

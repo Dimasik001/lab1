@@ -26,16 +26,23 @@ body {
 </div>
 <hr>
  <div class="heading">
-    <p>2.Дана функция, она принимает в качестве аргументов строки '*', '1', 'b', '1c',
-         реализуйте ее так, что бы она вернула строку '1*b*1c' </p>
+    <p>2.	Нужно написать функцию, которая проверяет, являются ли две строки анаграммами, 
+      причем       регистр букв не имеет значения. Учитываются лишь символы; пробелы или 
+      знаки препинания в расчет не берутся.</p>
+      <p>1 - DiMasik</p>
+      <p>2 - iksamid</p>
 <!--2-->
-<script>   
-function task() {
-  return [].slice.call(arguments, 1).join(arguments[0])
+<script> 
+var string1 = "Dimasik"
+var string2 = "iksamid"  
+function checkAnagram(string1, string2) {
+   return string1.replace(/[^\w]/g,'').toLowerCase().split('').sort().join('') == 
+        string2.toLowerCase().replace(/[^\w]/g,'').split('').sort().join('')
 }
-document.writeln(task('*', '1', 'b', '1c'));
+var result = checkAnagram(string1, string2);
+document.writeln(result);
 </script>
 </div>
 </body>
 
-</html> 
+</html>  

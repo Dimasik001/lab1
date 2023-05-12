@@ -26,12 +26,23 @@ body {
 </div>
 <hr>
  <div class="heading">
-    <p> 1.	Есть некоторая строка (var str = 'fgfggg';),
-         что будет, если мы возьмем str[0]? </p>
- <!--1-->
+    <p> 1.	Напишите функцию, которая найдёт числа в массиве, которые делятся на заданное число. </p>
+ <!--1--><p></p>Массив: 2,5,8,10,15,20,25,33,44,55 , ЧИСЛО 5</p>
+    
  <script>   
-var str = 'fgfggg';
-document.writeln(str[0]); 
+function Q(delitel, array) {
+let massiv = [];
+for(let i = 0; i < array.length; i++) {
+if(array[i] % delitel == 0) {
+massiv.push(array[i]);
+}
+}
+return massiv;
+}
+const massiv = [2,5,8,10,15,20,25,33,44,55];
+const delitel = 5;
+const delyatsa = Q(delitel, massiv);
+document.writeln(delyatsa); 
 </script>
 </div>
 </body>

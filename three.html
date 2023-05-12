@@ -26,34 +26,24 @@ body {
 </div>
 <hr>
  <div class="heading">
-    <p>3.	Дано дерево, надо найти сумму всех вершин.</p>
-    <img src="qwe.png"><br>
+    <p>3.	Нужно написать функцию, принимающую строку в качестве 
+      аргумента и возвращающую количество гласных, которые содержатся в строке.
+      Гласными являются «a», «e», «i», «o», «u».
+      </p>
+    <p>AndreevDmitriy</p>
 <!--3-->
 <script>   
-const Derevo = {
-  value: 2,            
-  left: {              
-    value: 1,          
-    left: null,       
-    right: null       
-  },
-  right: {             
-    value: 3,          
-    left: null,        
-    right: {          
-      value: 4,        
-      left: null,      
-      right: null      
-    },
+const glassnie = str => {
+  let count = 0
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+  for(let char of str.toLowerCase()) {
+    if(vowels.includes(char)) {
+      count++
+    }
   }
+  return count
 }
-function sumTree(Derevo) {
-  if (!Derevo) {
-    return 0;
-  }
-  return Derevo.value + sumTree(Derevo.left) + sumTree(Derevo.right);
-}
-document.writeln(sumTree(Derevo));
+document.writeln(glassnie('AndreevDmitriu'));
 </script>
 </div>
 </body>

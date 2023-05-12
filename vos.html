@@ -26,23 +26,24 @@ body {
 </div>
 <hr>
  <div class="heading">
-    <p>8.	Реализовать сортировку пузырьком.</p>
+    <p>8.	Рекурсия. Ноль чётный. Единица нечётная.
+         У любого числа N чётность такая же, как у N-2.
+          Напишите рекурсивную функцию isEven согласно этим правилам. Она должна принимать число и возвращать булевское значение. Потестируйте её на 50 и 75.
+         Попробуйте задать ей -1. </p>
+   
     <script>
-        document.writeln("40,3,7,10,13,90")
-    </script> <br>
-    <script>
-        var m = [40, 3, 7,10 ,13, 90],
-        count = m.length - 1;
-    for (var i = 0; i < count; i++) {
-      for (var j = 0; j < count - i; j++) {
-          if (m[j] > m[j + 1]) {
-              max = m[j];
-              m[j] = m[j + 1];
-              m[j + 1] = max;
-          }
-      }
-    }
-    document.writeln(m)
+function isEven(n){
+    if(n == 0)
+        return 'true';
+    else if(n == 1)
+        return 'false';
+    else
+        return isEven(n-2)
+};
+document.writeln(isEven(50)); 
+document.writeln(isEven(75)); 
+document.writeln(isEven(-1)); 
+    
 </script>
 </div>
 </body>
