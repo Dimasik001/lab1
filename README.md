@@ -70,21 +70,6 @@ echo $var;
 </body>
 </html> 
 
-<!DOCTYPE html>
-<html> 
-<head> 
-    <link rel="stylesheet" href="index.css">
-<title>1</title>
-</head>
-<style>
-body {
-        background-image: url('q.jpg'); 
-        background-repeat: no-repeat;
-		text-align:center;
-      }
-</style>
-   
-   <div class="menu" >
 
 <a href="#">1 задание</a><br>
 <?php
