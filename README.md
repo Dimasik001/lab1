@@ -68,6 +68,207 @@ echo $var;
 	
 </div>
 </body>
+</html> 
+
+<!DOCTYPE html>
+<html> 
+<head> 
+    <link rel="stylesheet" href="index.css">
+<title>1</title>
+</head>
+<style>
+body {
+        background-image: url('q.jpg'); 
+        background-repeat: no-repeat;
+		text-align:center;
+      }
+</style>
+   
+   <div class="menu" >
+
+<a href="#">1 задание</a><br>
+<?php
+ $var = 'hello';
+ echo $var[0]; 
+ echo $var[1]; 
+ echo $var[4]; 
+?>
+<br>
+<a href="#">2 задание</a><br>
+<?php
+ echo 60 * 60;
+?>
+<br>
+<a href="#">3 задание</a><br>
+<?php
+ $var = 1;
+ $var += 12;
+ $var -= 14;
+ $var *= 5;
+ $var /= 7;
+ $var++;
+ $var--;
+ echo $var;
+?>
+<br>
+<a href="#">4 задание</a><br>
+<?php
+$a = 3;
+echo $a;
+?>
+<br>
+<a href="#">5 задание</a><br>
+<?php
+$a = 10;
+$b = 2;
+echo $a + $b;
+echo "<br>",$a - $b;
+echo "<br>",$a * $b;
+echo "<br>",$a / $b;
+?>
+<br>
+<a href="#">6 задание</a><br>
+<?php
+$c = 15;
+$d = 2;
+$result = $c + $d;
+echo $result;
+?>
+<br>
+<a href="#">7 задание</a><br>
+<?php
+$a = 10;
+$b = 2;
+$c =5;
+echo $a + $b + $c;
+?>
+<br>
+<a href="#">8 задание</a><br>
+<?php
+$a = 17;
+$b = 10;
+$c = $a - $b;
+$d = 7;
+$result = $c + $d;
+echo $result;
+?>
+<br>
+<a href="#">9 задание</a><br>
+<?php
+$text = 'Привет, Мир!';
+echo $text;
+?>
+<br>
+<a href="#">10 задание</a><br>
+<?php
+$text1 = 'Привет, ';
+$text2 = 'Мир!';
+echo $text1 . $text2;
+?>
+<br>
+<a href="#">11 задание</a><br>
+<?php
+$name = 'Димас';
+echo 'Привет, ' . $name . '!';
+?>
+<br>
+<a href="#">12 задание</a><br>
+<?php
+$age = 22;
+echo 'Мне ' . $age . ' года!';
+?>
+<br>
+<a href="#">13 задание</a><br>
+<?php
+$text = 'abcde';
+echo $text[0];
+echo $text[2];
+echo $text[4];
+?>
+<br>
+<a href="#">14 задание</a><br>
+<?php
+$text = 'abcde';
+$text[0] = '!';
+echo $text;
+?>
+<br>
+<a href="#">15 задание</a><br>
+<?php
+$num = '12345';
+$sum = $num[0] + $num[1] + $num[2] + $num[3] + $num[4];
+echo $sum;
+?>
+<br>
+<a href="#">16 задание</a><br>
+<?php
+$hour = 60 * 60;
+$day = $hour * 24;
+$month = $day * 30;
+echo "Час-",$hour,"<br>День-",$day,"<br>Месяц-",$month;
+?>
+<br>
+<a href="#">17 задание</a><br>
+<?php
+$hour = 0;
+$min = 19;
+$sec = 33;
+echo $hour . ':' . $min . ':' . $sec;
+?>
+<br>
+<a href="#">18 задание</a><br>
+<?php
+$a = 3;
+$a *= $a;
+echo $a;
+?>
+<br>
+<a href="#">19 задание</a><br>
+<?php
+$var = 47;
+$var += 7;
+$var -= 18;
+$var *= 10;
+$var /= 20;
+echo $var;
+?>
+<br>
+<a href="#">20 задание</a><br>
+<?php
+$text = 'Я';
+$text .= ' хочу';
+$text .= ' знать';
+$text .= ' PHP!';
+echo $text;
+?>
+<br>
+<a href="#">21 задание</a><br>
+<?php
+$var = 10;
+$var++;
+$var++;
+$var--;
+echo $var;
+?>
+<br>
+<a href="#">22 задание</a><br>
+<?php
+$var = 10;
+$var += 7;
+$var++;
+$var--;
+$var += 12;
+$var *= 7;
+$var -= 15;
+echo $var;
+?>
+</div>
+<hr>
+ <div class="heading">
+ 
+</div>
+</body>
+
 </html> </p>
    <h2 style="text-align: center">ВЫВОД</h2>
     PHP крайне прост для освоения, но вместе с тем способен удовлетворить запросы профессиональных программистов. Не пугайтесь длинного списка возможностей PHP. Вы можете быстро начать, и уже в течение нескольких часов сможете создавать простые PHP-скрипты.
