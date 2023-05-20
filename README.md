@@ -71,7 +71,7 @@ echo $var;
 </html> 
 
 
-<a href="#">1 задание</a><br>
+
 <?php
  $var = 'hello';
  echo $var[0]; 
