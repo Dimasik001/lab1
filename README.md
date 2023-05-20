@@ -77,7 +77,7 @@ echo $var;
  echo $var[0]; 
  echo $var[1]; 
  echo $var[4]; 
-?>
+?></p>
 <br>
 <a href="#">2 задание</a><br>
 <?php
