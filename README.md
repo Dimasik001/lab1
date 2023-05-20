@@ -66,18 +66,16 @@ $var = $var - 15;
 echo $var;
 
 	
-</div>
-
 
 
 
 <p>
-<?php
+<
  $var = 'hello';
  echo $var[0]; 
  echo $var[1]; 
  echo $var[4]; 
-?></p>
+></p>
 <br>
 <a href="#">2 задание</a><br>
 <?php
