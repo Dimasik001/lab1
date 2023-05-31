@@ -166,7 +166,7 @@ echo print_r($arr1+$arr2+$arr3);
 ?>
 <br>
 <a href="#">20 задание</a><br>
-<?php
+<
 $arr = ['a'=>1, 'b'=>2, 'c'=>3];
 $keys = array_keys($arr);
 $values = array_values($arr);
@@ -175,14 +175,14 @@ echo print_r($values);
 ?>
 <br>
 <a href="#">21 задание</a><br>
-<?php
+<
 $arr1 = ['a', 'b', 'c'];
 $arr2 = [1, 2, 3];
 var_dump(array_combine($arr1, $arr2));
 ?>
 <br>
 <a href="#">22 задание</a><br>
-<?php
+<
 $arr = ['a'=>1, 'b'=>2, 'c'=>3];
 var_dump(array_flip($arr));
 ?>
@@ -191,12 +191,12 @@ var_dump(array_flip($arr));
 
 <br>
 <a href="#">23 задание</a><br>
-<?php
+<
 var_dump(array_reverse([1, 2, 3, 4, 5]));
 ?>
 <br>
 <a href="#">24 задание</a><br>
-<?php
+<
 $arr =  ['a', '-', 'b', '-', 'c', '-', 'd'];
 $pos = array_search('-', $arr);
 print_r($pos);
@@ -212,7 +212,7 @@ print_r($arr);
 
 <br>
 <a href="#">26 задание</a><br>
-<?php
+<
 $arr =  ['a', 'b', 'c', 'd', 'e'];
 var_dump(array_replace($arr, [0 => '!', 3 => '!!']));
 print_r($arr);
@@ -220,7 +220,7 @@ print_r($arr);
 
 <br>
 <a href="#">27 задание</a><br>
-<?php
+<
 $arr = ['3'=>'a', '1'=>'c', '2'=>'e', '4'=>'b'];
 var_dump(sort($arr)); // по возрастанию 
 var_dump(rsort($arr)); // по убыванию 
@@ -230,21 +230,21 @@ var_dump(krsort($arr)); // по убыванию ключей
 
 <br>
 <a href="#">28 задание</a><br>
-<?php
+<
 $arr = ['a'=>1, 'b'=>2, 'c'=>3];
 echo $arr[array_rand($arr)];
 ?>
 
 <br>
 <a href="#">29 задание</a><br>
-<?php
+<
 $arr = ['a'=>1, 'b'=>2, 'c'=>3];
 echo array_rand($arr);
 ?>
 
 <br>
 <a href="#">30 задание</a><br>
-<?php
+<
 $arr = [1, 2, 3, 4, 5];
 var_dump(shuffle($arr));
 print_r ($arr);
@@ -252,7 +252,7 @@ print_r ($arr);
 
 <br>
 <a href="#">31 задание</a><br>
-<?php
+<
 $num = range(1, 25);
 shuffle($num);
 print_r ($num);
@@ -260,7 +260,7 @@ print_r ($num);
 
 <br>
 <a href="#">32 задание</a><br>
-<?php
+<
 $num = range('a', 'z');
 shuffle($num);
 print_r ($num);
@@ -268,7 +268,7 @@ print_r ($num);
 
 <br>
 <a href="#">33 задание</a><br>
-<?php
+<
 $characters = 'abcdefghijklmnopqrstuvwxyz';
 echo substr(str_shuffle($characters), 0, 6);
 
@@ -276,7 +276,7 @@ echo substr(str_shuffle($characters), 0, 6);
 
 <br>
 <a href="#">34 задание</a><br>
-<?php
+<
 $az = ['a', 'b', 'c', 'b', 'a','c'];
 $q  = var_dump(array_unique($az));
 print_r ($q);
@@ -317,7 +317,7 @@ print_r ($new);
 ?>
 <br>
 <a href="#">39 задание</a><br>
-<?php
+<
 $arr = array_fill(0, 10, 'x');
 print_r ($arr);
 ?>
