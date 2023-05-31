@@ -157,7 +157,7 @@ var_dump(array_splice($arr, 3, 0, ['a', 'b', 'c']));
 >
 <br>
 <a href="#">19 задание</a><br>
-<?php
+<
 $arr = [1, 2, 3, 4, 5];
 $arr1 = array_splice($arr, 1, 0, ['a', 'b']);
 $arr2 = array_splice($arr, 6, 0, ['c']);
@@ -203,7 +203,7 @@ print_r($pos);
 ?>
 <br>
 <a href="#">25 задание</a><br>
-<?php
+<
 $arr =  ['a', '-', 'b', '-', 'c', '-', 'd'];
 $pos = array_search('-', $arr);
 var_dump(array_splice($arr, $pos, 1));
@@ -274,7 +274,6 @@ echo substr(str_shuffle($characters), 0, 6);
 
 ?>
 
-<br>
 <a href="#">34 задание</a><br>
 <
 $az = ['a', 'b', 'c', 'b', 'a','c'];
