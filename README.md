@@ -86,10 +86,10 @@ echo array_sum($arr);
 >
 <br>
 <a href="#">7 задание</a><br>
-<?php
+<
 $arr = [1, 2, 3, 4, 5];
 echo array_product($arr);
-?>
+>
 <br>
 <a href="#">8 задание</a><br>
 <
@@ -104,10 +104,10 @@ echo print_r($num);
 >
 <br>
 <a href="#">10 задание</a><br>
-<?php
+<
 $az = range('a', 'z');
 echo print_r($az );
-?>
+>
 <br>
 <a href="#">11 задание</a><br>
 <
@@ -145,16 +145,16 @@ var_dump(array_splice($arr, 1, 2));
 >
 <br>
 <a href="#">17 задание</a><br>
-<?php
+<
 $arr = [1, 2, 3, 4, 5];
 var_dump(array_splice($arr, 1, 3));
-?>
+>
 <br>
 <a href="#">18 задание</a><br>
-<?php
+<
 $arr = [1, 2, 3, 4, 5];
 var_dump(array_splice($arr, 3, 0, ['a', 'b', 'c']));
-?>
+>
 <br>
 <a href="#">19 задание</a><br>
 <?php
@@ -284,14 +284,14 @@ print_r ($q);
 
 <br>
 <a href="#">35 задание</a><br>
-<?php
+<
 $arr = [1, 2, 3, 4, 5];
 echo array_shift($arr);
 echo array_pop($arr);
 ?>
 <br>
 <a href="#">36 задание</a><br>
-<?php
+<
 $arr = [1, 2, 3, 4, 5];
 array_unshift($arr,0);
 array_push($arr, 6);
@@ -299,7 +299,7 @@ print_r ($arr);
 ?>
 <br>
 <a href="#">37 задание</a><br>
-<?php
+<
 $arr = [1, 2, 3, 4, 5, 6, 7, 8];
 $str = '';
 while (!empty($arr)) {
@@ -310,7 +310,7 @@ echo $str;
 ?>
 <br>
 <a href="#">38 задание</a><br>
-<?php
+<
 $arr = ['a', 'b', 'c'];
 $new = array_pad($arr, 6, '-');
 print_r ($new);
@@ -323,11 +323,11 @@ print_r ($arr);
 ?>
 <br>
 <a href="#">40 задание</a><br>
-<?php
+<
 $arr = range(1, 20);
 $arr = array_chunk($arr, 4);
 print_r ($arr);
-?>
+>
 
 
 
