@@ -50,30 +50,28 @@
 40.	 Создайте массив, заполненный целыми числами от 1 до 20. С помощью функции array_chunk разбейте этот массив на 5 подмассивов ([1, 2, 3, 4]; [5, 6, 7, 8] и т.д.).
 1 задание
 <
- $num = range(1, 100);
+$num = range(1, 100);
 echo array_sum($num);
 >
 <br>
 <a href="#">2 задание</a><br>
-
 <
 $str = "'a','b','c','d','f'";
 $str = strtoupper($str);
 echo $str; 
 >
-
 <br>
 <a href="#">3 задание</a><br>
-<?php
+<
 $arr = [1, 2, 3,4,5,6,7];
 echo count($arr);
-?>
+>
 <br>
 <a href="#">4 задание</a><br>
-<?php
+<
 $arr = [1, 2, 3, 4];
 echo $arr[count($arr) - 1];
-?>
+>
 <br>
 <a href="#">5 задание</a><br>
 <?php
