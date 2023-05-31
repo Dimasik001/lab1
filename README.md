@@ -266,7 +266,7 @@ shuffle($num);
 print_r ($num);
 ?>
 
-<br>
+
 <a href="#">33 задание</a><br>
 <
 $characters = 'abcdefghijklmnopqrstuvwxyz';
@@ -281,7 +281,7 @@ $q  = var_dump(array_unique($az));
 print_r ($q);
 ?>
 
-<br>
+
 <a href="#">35 задание</a><br>
 <
 $arr = [1, 2, 3, 4, 5];
