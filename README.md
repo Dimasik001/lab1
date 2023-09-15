@@ -50,11 +50,11 @@ alert(num);
 console.log('Задача 1');
  
     var str = 'hdfgv';
-    console.log(str[0]); // Вывести 'h'
+    console.log(str[0]); 
 
-    console.log(str[1]); // Вывести 'd'
+    console.log(str[1]); 
 
-    console.log(str[4]); // Вывести 'v'
+    console.log(str[4]);
   
   
 console.log('Задача 2');
