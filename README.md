@@ -1,3 +1,4 @@
+```
 @startuml
 left to right direction
 actor "Человек" as fc
@@ -22,6 +23,7 @@ fc --> UC7
 fc --> UC8
 UC5 <-- pc
 @enduml
+```
 <br>
 ![image](https://github.com/user-attachments/assets/b9060ab3-f308-47a5-9f5d-9c0122c462e9) <br>
 Как владелец автомобиля, который использует автомойку регулярно, я хочу получать уведомления о завершении мойки, чтобы я мог сразу забрать машину и не тратить время на ожидание.<br>
