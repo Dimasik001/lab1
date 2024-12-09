@@ -1,4 +1,4 @@
-<h1>User STORY</h1>
+![XPCnJy9G58Nt_egNZYOTN9aW4Gs9OgBT2H464d2GEXaJ88uaLiM02DWoE3bKGms2rBzmtZ_olaRiRMEnspiz_UuzzxvccrRvp3flrBMJUhdP51ZY4GFSOuofkD04FOMYgUGbvl2nafrIhHBgn-PHeRWdoFqfhsFAb8nB-F8A0LRQfRPcsxYbTnFE_P6Ip14ysS82Na8DC5DisOq](https://github.com/user-attachments/assets/477bfb83-f2c3-4497-a363-2c5b6aa2afa3)<h1>User STORY</h1>
 Как владелец автомобиля, который использует автомойку регулярно, я хочу получать уведомления о завершении мойки, чтобы я мог сразу забрать машину и не тратить время на ожидание.<br>
 Как клиент, который предпочитает определенные моющие средства и процедуры, я хочу иметь возможность сохранять свои предпочтения в профиле, чтобы каждый раз не указывать их заново.<br>
 Как пользователь мобильного приложения автомойки, я хочу иметь возможность просматривать и редактировать свою предстоящую запись, чтобы при необходимости изменять время или услуги.<br>
@@ -81,4 +81,5 @@ UC5 <-- pc
      2. Система ожидает от пользователя ввод адреса<br>
      3. Система переходит в "Базовый сценарий Шаг 2"<br> 
 <h1>ER- диаграмма</h1>
-https://www.planttext.com/api/plantuml/png/XPCnJy9G58Nt_egNZYOTN9aW4Gs9OgBT2H464d2GEXaJ88uaLiM02DWoE3bKGms2rBzmtZ_olaRiRMEnspiz_UuzzxvccrRvp3flrBMJUhdP51ZY4GFSOuofkD04FOMYgUGbvl2nafrIhHBgn-PHeRWdoFqfhsFAb8nB-F8A0LRQfRPcsxYbTnFE_P6Ip14ysS82Na8DC5DisOq8TqfCRJGgxb8eXweDuF86NEgpXJVCPJizsEx-OOwypufBFKNGFWLuKaYyS6WV7huKKdRNq9sScJSB1tc17cNhm2jPjKOrTH1flOMwG_XN14HPKTP5FAT3g1jC23QcneQyhJ--sxp87irsYNUo1vIbmyUkTl6XDXIlFgBA3xG4czUDUJdVnem2-hAz-Vh4BgM-hGl34FgM7bseZ32qtmCtyFraoCFFtCSlHmXBCoQd6vgJ8lyW6aXeZOx_KRLizRH2F-Ot
+![XPCnJy9G58Nt_egNZYOTN9aW4Gs9OgBT2H464d2GEXaJ88uaLiM02DWoE3bKGms2rBzmtZ_olaRiRMEnspiz_UuzzxvccrRvp3flrBMJUhdP51ZY4GFSOuofkD04FOMYgUGbvl2nafrIhHBgn-PHeRWdoFqfhsFAb8nB-F8A0LRQfRPcsxYbTnFE_P6Ip14ysS82Na8DC5DisOq](https://github.com/user-attachments/assets/e854d2d0-fa6e-4926-9ec5-d6634d37decc)
+
