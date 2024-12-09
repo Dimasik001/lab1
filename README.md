@@ -81,3 +81,4 @@ UC5 <-- pc
      2. Система ожидает от пользователя ввод адреса<br>
      3. Система переходит в "Базовый сценарий Шаг 2"<br> 
 <h1>ER- диаграмма</h1>
+https://www.planttext.com/api/plantuml/png/XPCnJy9G58Nt_egNZYOTN9aW4Gs9OgBT2H464d2GEXaJ88uaLiM02DWoE3bKGms2rBzmtZ_olaRiRMEnspiz_UuzzxvccrRvp3flrBMJUhdP51ZY4GFSOuofkD04FOMYgUGbvl2nafrIhHBgn-PHeRWdoFqfhsFAb8nB-F8A0LRQfRPcsxYbTnFE_P6Ip14ysS82Na8DC5DisOq8TqfCRJGgxb8eXweDuF86NEgpXJVCPJizsEx-OOwypufBFKNGFWLuKaYyS6WV7huKKdRNq9sScJSB1tc17cNhm2jPjKOrTH1flOMwG_XN14HPKTP5FAT3g1jC23QcneQyhJ--sxp87irsYNUo1vIbmyUkTl6XDXIlFgBA3xG4czUDUJdVnem2-hAz-Vh4BgM-hGl34FgM7bseZ32qtmCtyFraoCFFtCSlHmXBCoQd6vgJ8lyW6aXeZOx_KRLizRH2F-Ot
