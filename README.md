@@ -311,6 +311,7 @@ WebApp -> Customer: Отображает результат оплаты
 @enduml
 
 <h1>OpenAPI</h1>
+
 ```
 openapi: 3.0.0
 info:
