@@ -169,7 +169,7 @@ Rel(AutoWashApp, MapService, "Использует", "Отображение м�
 
 <h1> C4 Model Level 2</h1>
 ![image](https://github.com/user-attachments/assets/c53d7caa-3c88-455f-92c6-095fcf63efeb)
-
+<br>
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
