@@ -235,3 +235,50 @@ SmsService --> ApiServer: Возвращает подтверждение отп
 ApiServer --> WebApp: Возвращает подтверждение создания записи
 WebApp --> Customer: Отображает подтверждение записи
 @enduml
+
+<h1>Сценарий 2: Просмотр записей работником автомойки</h1>
+
+![image](https://github.com/user-attachments/assets/44e61fe2-0173-437c-9ee5-f0d3cede2ee5)
+
+
+@startuml
+title Просмотр записей работником
+participant Employee as "Работник автомойки"
+participant MobileApp as "Мобильное приложение"
+participant ApiServer as "API Сервер"
+participant Database as "База данных"
+
+Employee -> MobileApp: Запрашивает список записей
+MobileApp -> ApiServer: Запрашивает записи на сегодня
+ApiServer -> Database: Запрашивает записи из БД
+Database --> ApiServer: Возвращает список записей
+ApiServer --> MobileApp: Возвращает список записей
+MobileApp -> Employee: Отображает список записей
+@enduml
+
+
+<h1>Сценарий 3: Редактирование записи администратором</h1>
+
+![image](https://github.com/user-attachments/assets/b3845bf1-7950-4381-bb40-bb588bd1f724)
+
+
+@startuml
+title Редактирование записи администратором
+participant Admin as "Администратор"
+participant WebApp as "Веб-приложение"
+participant ApiServer as "API Сервер"
+participant Database as "База данных"
+
+Admin -> WebApp: Запрашивает страницу редактирования записи
+WebApp -> ApiServer: Запрашивает данные о записи
+ApiServer -> Database: Запрашивает данные из БД
+Database --> ApiServer: Возвращает данные записи
+ApiServer --> WebApp: Возвращает данные записи
+WebApp -> Admin: Отображает форму редактирования
+Admin -> WebApp: Вносит изменения в запись
+WebApp -> ApiServer: Отправляет запрос на изменение записи
+ApiServer -> Database: Обновляет запись в БД
+Database --> ApiServer: Возвращает подтверждение обновления
+ApiServer --> WebApp: Возвращает подтверждение изменения
+WebApp -> Admin: Отображает подтверждение редактирования
+@enduml
