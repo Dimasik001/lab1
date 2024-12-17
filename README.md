@@ -282,3 +282,33 @@ Database --> ApiServer: Возвращает подтверждение обно
 ApiServer --> WebApp: Возвращает подтверждение изменения
 WebApp -> Admin: Отображает подтверждение редактирования
 @enduml
+
+
+<h1>Сценарий 4: Оплата услуги (без деталей платежной системы)</h1>
+
+![image](https://github.com/user-attachments/assets/333dd993-b3ab-441b-b337-107c39442fc7)
+
+
+@startuml
+title Оплата услуги
+participant Customer as "Клиент"
+participant WebApp as "Веб-приложение"
+participant ApiServer as "API Сервер"
+participant PaymentSystem as "Платежная система"
+
+Customer -> WebApp: Запрашивает страницу оплаты
+WebApp -> ApiServer: Запрашивает данные о записи
+ApiServer -> Database: Запрашивает данные о записи
+Database --> ApiServer: Возвращает данные о записи
+ApiServer --> WebApp: Возвращает данные записи
+WebApp -> Customer: Отображает страницу оплаты
+Customer -> WebApp: Вводит платежные данные
+WebApp -> ApiServer: Отправляет запрос на оплату
+ApiServer -> PaymentSystem: Инициирует платеж
+PaymentSystem --> ApiServer: Возвращает результат платежа
+ApiServer --> WebApp: Возвращает результат оплаты
+WebApp -> Customer: Отображает результат оплаты
+@enduml
+
+
+
