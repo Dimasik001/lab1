@@ -136,6 +136,7 @@ class МОЙКА {
 
 
 <h1> C4 Model Level 1</h1>
+
 ![image](https://github.com/user-attachments/assets/b890440f-a615-4bc6-97f1-792e023daac6)
 
 <br>
@@ -166,6 +167,7 @@ Rel(AutoWashApp, MapService, "Использует", "Отображение м�
 @enduml
 
 <h1> C4 Model Level 2</h1>
+
 ![image](https://github.com/user-attachments/assets/a49c1d5a-0d23-438b-b2dd-29ed30ff5227)
 <br>
 @startuml
@@ -189,7 +191,6 @@ Container(WebApp, "Веб-приложение", "Web Browser", "Пользов�
 Container(MobileApp, "Мобильное приложение", "Mobile App", "Пользовательский интерфейс для работников автомойки", "Native App")
 Container(ApiServer, "API Сервер", "API", "Предоставляет API для клиентских приложений", "Node.js, Express")
 ContainerDb(Database, "База данных", "Database", "Хранит данные о клиентах, записях, сервисах", "PostgreSQL")
-
 ' Взаимодействия
 Rel(Customer, WebApp, "Использует")
 Rel(Admin, WebApp, "Использует")
@@ -203,8 +204,4 @@ Rel(ApiServer, PaymentSystem, "Отправляет", "Платежи")
 Rel(ApiServer, SmsService, "Отправляет", "СМС уведомления")
 Rel(ApiServer, EmailService, "Отправляет", "Email уведомления")
 Rel(ApiServer, MapService, "Использует", "Получение данных о местоположении")
-
 @enduml
-
-
-
