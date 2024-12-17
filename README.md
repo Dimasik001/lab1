@@ -136,10 +136,7 @@ class МОЙКА {
 
 
 <h1> C4 Model Level 1</h1>
-
-![image](https://github.com/user-attachments/assets/a572f260-8323-4911-8ec2-1665637ca0b3)
-
-
+![image](https://github.com/user-attachments/assets/a572f260-8323-4911-8ec2-1665637ca0b3) 
 <br>
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
