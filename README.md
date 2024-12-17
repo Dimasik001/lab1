@@ -137,7 +137,8 @@ class МОЙКА {
 
 <h1> C4 Model Level 1</h1>
 
-![Uploading hLNDRjDC5DtdAVnbbKfjilbMh1gL291Qg6YhYbNa9XQrv1_B7aExQrea5Y05iG4X15IyG9B6r4qQvnMktuWprpWTMGu12Qbgx3lt_Covaybc87HVXBPL-SzqEbRODRHZ8RpWNgFXwo_hpqrn71w5WU5tN4SOZgXtNBlXMReZCHk1w5hcKMFh_urTMJhOsMxOUY0C7wNsbaISYBeds.png…]()
+![image](https://github.com/user-attachments/assets/a572f260-8323-4911-8ec2-1665637ca0b3)
+
 
 <br>
 @startuml
