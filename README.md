@@ -134,3 +134,39 @@ class МОЙКА {
 
 @enduml
 
+
+<h1> C4 Model Level 1</h1>
+![hLNDRjDC5DtdAVnbbKfjilbMh1gL291Qg6YhYbNa9XQrv1_B7aExQrea5Y05iG4X15IyG9B6r4qQvnMktuWprpWTMGu12Qbgx3lt_Covaybc87HVXBPL-SzqEbRODRHZ8RpWNgFXwo_hpqrn71w5WU5tN4SOZgXtNBlXMReZCHk1w5hcKMFh_urTMJhOsMxOUY0C7wNsbaISYBeds](https://github.com/user-attachments/assets/5315c530-c96b-4f44-92c5-e6de92f1f639)
+<br>
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+System_Ext(PaymentSystem, "Платежная система", "Обработка платежей")
+System_Ext(SmsService, "СМС Сервис", "Отправка СМС уведомлений")
+System_Ext(EmailService, "Email Сервис", "Отправка Email уведомлений")
+System_Ext(MapService, "Картографический сервис", "Отображение местоположения моек")
+
+Person(Customer, "Клиент", "Записывается на мойку, просматривает услуги")
+Person(Admin, "Администратор", "Управляет сервисами, записями и сотрудниками")
+Person(Employee, "Работник автомойки", "Просматривает назначенные записи, выполняет работу")
+
+System(AutoWashApp, "Учебное приложение автомойки", "Управляет записями, клиентами, сервисами и сотрудниками.")
+
+Rel(Customer, AutoWashApp, "Использует")
+Rel(Admin, AutoWashApp, "Управляет")
+Rel(Employee, AutoWashApp, "Выполняет работу", "Просматривает записи")
+Rel(AutoWashApp, PaymentSystem, "Отправляет", "Платежи")
+Rel(AutoWashApp, SmsService, "Отправляет", "СМС уведомления")
+Rel(AutoWashApp, EmailService, "Отправляет", "Email уведомления")
+Rel(AutoWashApp, MapService, "Использует", "Отображение местоположения моек")
+
+@enduml
+
+
+
+
+
+
+
