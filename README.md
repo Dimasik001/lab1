@@ -142,6 +142,8 @@ class МОЙКА {
 ![image](https://github.com/user-attachments/assets/b890440f-a615-4bc6-97f1-792e023daac6)
 
 <br>
+
+```
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
 
@@ -167,12 +169,15 @@ Rel(AutoWashApp, EmailService, "Отправляет", "Email уведомлен
 Rel(AutoWashApp, MapService, "Использует", "Отображение местоположения моек")
 
 @enduml
+```
 
 <h1> C4 Model Level 2</h1>
 
 ![image](https://github.com/user-attachments/assets/f778c2af-1816-49d2-a2d0-6c814ecef605)
 
 <br>
+
+```
 @startuml
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
@@ -208,6 +213,7 @@ Rel(ApiServer, SmsService, "Отправляет", "СМС уведомлени�
 Rel(ApiServer, EmailService, "Отправляет", "Email уведомления")
 Rel(ApiServer, MapService, "Использует", "Получение данных о местоположении")
 @enduml
+```
 
 <h1>Сценарий 1: Запись клиента на мойку</h1>
 
