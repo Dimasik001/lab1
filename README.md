@@ -84,6 +84,7 @@ fc --> UC8
   7.  Система переходит к <b>UC3: Выбрать услугу</b>.
   8.  Сценарий завершен.<br> 
 <h1>ER- диаграмма</h1>
+
 ![XPCnJy9G58Nt_egNZYOTN9aW4Gs9OgBT2H464d2GEXaJ88uaLiM02DWoE3bKGms2rBzmtZ_olaRiRMEnspiz_UuzzxvccrRvp3flrBMJUhdP51ZY4GFSOuofkD04FOMYgUGbvl2nafrIhHBgn-PHeRWdoFqfhsFAb8nB-F8A0LRQfRPcsxYbTnFE_P6Ip14ysS82Na8DC5DisOq](https://github.com/user-attachments/assets/1c9a93b2-fdb0-4bf7-b4d5-cb55ca7b5eaa)  <br> 
 
 ```
