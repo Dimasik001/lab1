@@ -359,4 +359,666 @@ WebApp -> Customer: Отображает результат оплаты
 
 <h1>OpenAPI</h1>
 
+``` 
+openapi: 3.0.0
+info:
+  title: Car Wash Service API
+  version: 1.0.0
+  description: API for managing clients, cars, services, appointments, employees and car washes.
+paths:
+  /clients:
+    get:
+      summary: Get a list of all clients
+      tags:
+        - clients
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Client'
+    post:
+      summary: Create a new client
+      tags:
+        - clients
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Client'
+      responses:
+        '201':
+          description: Client created successfully
+        '400':
+          description: Invalid input
+  /clients/{clientId}:
+    get:
+      summary: Get a client by ID
+      tags:
+        - clients
+      parameters:
+        - in: path
+          name: clientId
+          required: true
+          description: ID of the client to get
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Client'
+        '404':
+          description: Client not found
+    put:
+      summary: Update an existing client
+      tags:
+        - clients
+      parameters:
+        - in: path
+          name: clientId
+          required: true
+          description: ID of the client to update
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Client'
+      responses:
+        '200':
+          description: Client updated successfully
+        '400':
+          description: Invalid input
+        '404':
+          description: Client not found
+    delete:
+      summary: Delete a client by ID
+      tags:
+        - clients
+      parameters:
+        - in: path
+          name: clientId
+          required: true
+          description: ID of the client to delete
+          schema:
+            type: integer
+      responses:
+        '204':
+          description: Client deleted successfully
+        '404':
+          description: Client not found
+  /cars:
+    get:
+      summary: Get a list of all cars
+      tags:
+        - cars
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Car'
+    post:
+      summary: Create a new car
+      tags:
+        - cars
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Car'
+      responses:
+        '201':
+          description: Car created successfully
+        '400':
+          description: Invalid input
+  /cars/{carId}:
+      get:
+        summary: Get a car by ID
+        tags:
+          - cars
+        parameters:
+          - in: path
+            name: carId
+            required: true
+            description: ID of the car to get
+            schema:
+              type: integer
+        responses:
+          '200':
+            description: Successful response
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Car'
+          '404':
+            description: Car not found
+      put:
+        summary: Update an existing car
+        tags:
+          - cars
+        parameters:
+          - in: path
+            name: carId
+            required: true
+            description: ID of the car to update
+            schema:
+              type: integer
+        requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Car'
+        responses:
+          '200':
+            description: Car updated successfully
+          '400':
+            description: Invalid input
+          '404':
+            description: Car not found
+      delete:
+        summary: Delete a car by ID
+        tags:
+          - cars
+        parameters:
+          - in: path
+            name: carId
+            required: true
+            description: ID of the car to delete
+            schema:
+              type: integer
+        responses:
+          '204':
+            description: Car deleted successfully
+          '404':
+            description: Car not found
+  /services:
+    get:
+      summary: Get a list of all services
+      tags:
+        - services
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Service'
+    post:
+      summary: Create a new service
+      tags:
+        - services
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Service'
+      responses:
+        '201':
+          description: Service created successfully
+        '400':
+          description: Invalid input
+  /services/{serviceId}:
+    get:
+      summary: Get a service by ID
+      tags:
+        - services
+      parameters:
+        - in: path
+          name: serviceId
+          required: true
+          description: ID of the service to get
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Service'
+        '404':
+          description: Service not found
+    put:
+      summary: Update an existing service
+      tags:
+        - services
+      parameters:
+        - in: path
+          name: serviceId
+          required: true
+          description: ID of the service to update
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Service'
+      responses:
+        '200':
+          description: Service updated successfully
+        '400':
+          description: Invalid input
+        '404':
+          description: Service not found
+    delete:
+        summary: Delete a service by ID
+        tags:
+          - services
+        parameters:
+          - in: path
+            name: serviceId
+            required: true
+            description: ID of the service to delete
+            schema:
+              type: integer
+        responses:
+          '204':
+            description: Service deleted successfully
+          '404':
+            description: Service not found
+  /appointments:
+    get:
+      summary: Get a list of all appointments
+      tags:
+        - appointments
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Appointment'
+    post:
+      summary: Create a new appointment
+      tags:
+        - appointments
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Appointment'
+      responses:
+        '201':
+          description: Appointment created successfully
+        '400':
+          description: Invalid input
+  /appointments/{appointmentId}:
+      get:
+        summary: Get an appointment by ID
+        tags:
+          - appointments
+        parameters:
+          - in: path
+            name: appointmentId
+            required: true
+            description: ID of the appointment to get
+            schema:
+              type: integer
+        responses:
+          '200':
+            description: Successful response
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Appointment'
+          '404':
+            description: Appointment not found
+      put:
+        summary: Update an existing appointment
+        tags:
+          - appointments
+        parameters:
+          - in: path
+            name: appointmentId
+            required: true
+            description: ID of the appointment to update
+            schema:
+              type: integer
+        requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Appointment'
+        responses:
+          '200':
+            description: Appointment updated successfully
+          '400':
+            description: Invalid input
+          '404':
+            description: Appointment not found
+      delete:
+        summary: Delete an appointment by ID
+        tags:
+          - appointments
+        parameters:
+          - in: path
+            name: appointmentId
+            required: true
+            description: ID of the appointment to delete
+            schema:
+              type: integer
+        responses:
+          '204':
+            description: Appointment deleted successfully
+          '404':
+            description: Appointment not found
+  /employees:
+    get:
+      summary: Get a list of all employees
+      tags:
+        - employees
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Employee'
+    post:
+      summary: Create a new employee
+      tags:
+        - employees
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Employee'
+      responses:
+        '201':
+          description: Employee created successfully
+        '400':
+          description: Invalid input
+  /employees/{employeeId}:
+      get:
+        summary: Get an employee by ID
+        tags:
+          - employees
+        parameters:
+          - in: path
+            name: employeeId
+            required: true
+            description: ID of the employee to get
+            schema:
+              type: integer
+        responses:
+          '200':
+            description: Successful response
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Employee'
+          '404':
+            description: Employee not found
+      put:
+        summary: Update an existing employee
+        tags:
+          - employees
+        parameters:
+          - in: path
+            name: employeeId
+            required: true
+            description: ID of the employee to update
+            schema:
+              type: integer
+        requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Employee'
+        responses:
+          '200':
+            description: Employee updated successfully
+          '400':
+            description: Invalid input
+          '404':
+            description: Employee not found
+      delete:
+        summary: Delete an employee by ID
+        tags:
+          - employees
+        parameters:
+          - in: path
+            name: employeeId
+            required: true
+            description: ID of the employee to delete
+            schema:
+              type: integer
+        responses:
+          '204':
+            description: Employee deleted successfully
+          '404':
+            description: Employee not found
+  /carwashes:
+    get:
+      summary: Get a list of all car washes
+      tags:
+        - carwashes
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CarWash'
+    post:
+      summary: Create a new car wash
+      tags:
+        - carwashes
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CarWash'
+      responses:
+        '201':
+          description: Car wash created successfully
+        '400':
+          description: Invalid input
+  /carwashes/{carwashId}:
+      get:
+        summary: Get a car wash by ID
+        tags:
+          - carwashes
+        parameters:
+          - in: path
+            name: carwashId
+            required: true
+            description: ID of the car wash to get
+            schema:
+              type: integer
+        responses:
+          '200':
+            description: Successful response
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/CarWash'
+          '404':
+            description: Car wash not found
+      put:
+        summary: Update an existing car wash
+        tags:
+          - carwashes
+        parameters:
+          - in: path
+            name: carwashId
+            required: true
+            description: ID of the car wash to update
+            schema:
+              type: integer
+        requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CarWash'
+        responses:
+          '200':
+            description: Car wash updated successfully
+          '400':
+            description: Invalid input
+          '404':
+            description: Car wash not found
+      delete:
+        summary: Delete a car wash by ID
+        tags:
+          - carwashes
+        parameters:
+          - in: path
+            name: carwashId
+            required: true
+            description: ID of the car wash to delete
+            schema:
+              type: integer
+        responses:
+          '204':
+            description: Car wash deleted successfully
+          '404':
+            description: Car wash not found
+components:
+  schemas:
+    Client:
+      type: object
+      properties:
+        clientId:
+          type: integer
+          description: Unique ID of the client
+        name:
+          type: string
+          description: Name of the client
+        phone:
+          type: string
+          description: Phone number of the client
+      required:
+        - name
+        - phone
+    Car:
+      type: object
+      properties:
+        carId:
+          type: integer
+          description: Unique ID of the car
+        make:
+          type: string
+          description: Make of the car
+        model:
+          type: string
+          description: Model of the car
+        year:
+          type: integer
+          description: Year of the car
+        clientId:
+          type: integer
+          description: ID of the client owning the car
+      required:
+          - make
+          - model
+          - year
+          - clientId
+    Service:
+      type: object
+      properties:
+        serviceId:
+          type: integer
+          description: Unique ID of the service
+        name:
+          type: string
+          description: Name of the service
+        price:
+          type: number
+          format: float
+          description: Price of the service
+      required:
+          - name
+          - price
+    Appointment:
+      type: object
+      properties:
+        appointmentId:
+          type: integer
+          description: Unique ID of the appointment
+        dateTime:
+          type: string
+          format: date-time
+          description: Date and time of the appointment
+        carId:
+          type: integer
+          description: ID of the car for the appointment
+        serviceId:
+          type: integer
+          description: ID of the service for the appointment
+        employeeId:
+          type: integer
+          description: ID of the employee performing the appointment
+      required:
+          - dateTime
+          - carId
+          - serviceId
+          - employeeId
+    Employee:
+      type: object
+      properties:
+        employeeId:
+          type: integer
+          description: Unique ID of the employee
+        name:
+          type: string
+          description: Name of the employee
+        position:
+          type: string
+          description: Position of the employee
+        carWashId:
+          type: integer
+          description: ID of the car wash where the employee works
+      required:
+          - name
+          - position
+          - carWashId
+    CarWash:
+      type: object
+      properties:
+        carWashId:
+          type: integer
+          description: Unique ID of the car wash
+        address:
+          type: string
+          description: Address of the car wash
+        phone:
+          type: string
+          description: Phone number of the car wash
+      required:
+          - address
+          - phone
+```
 
