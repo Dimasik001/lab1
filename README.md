@@ -23,24 +23,25 @@ left to right direction
 actor "Человек" as fc
 rectangle "Плат система" as pc
 rectangle Мойка{
-  usecase "UC1:Выбрать автомойку" as UC1
-  usecase "UC2:Выбрать город" as UC2
-  usecase "UC3:Выбрать дату и время" as UC3
-  usecase "UC4:Выбрать услугу" as UC4 
-usecase "UC5:Оплатить услуги" as UC5
+  usecase "UC1:Выбрать город" as UC1
+  usecase "UC2:Выбрать автомойку" as UC2
+  usecase "UC4:Выбрать дату и время" as UC4
+  usecase "UC3:Выбрать услугу" as UC3
+  usecase "UC5:Оплатить услуги" as UC5
   usecase "UC6:Выбрать способ оплаты" as UC6
- usecase "UC7:Отменить запись" as UC7
- usecase "UC8:Получить тех поддержку" as UC8
+  usecase "UC7:Отменить запись" as UC7
+  usecase "UC8:Получить тех поддержку" as UC8
 }
 fc --> UC1
 fc --> UC2
-fc --> UC3 
-fc --> UC4
-fc --> UC5 
-fc --> UC6
+fc --> UC3
+UC3 --> UC4
+fc --> UC5
+UC5 --> UC6
+pc --> UC6
 fc --> UC7
 fc --> UC8
-UC5 <-- pc
+
 @enduml
 ```
 
