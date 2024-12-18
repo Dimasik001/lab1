@@ -207,7 +207,8 @@ Rel(AutoWashApp, PaymentSystem, "Отправляют")
 
 <h1> C4 Model Level 2</h1>
 
-![image](https://github.com/user-attachments/assets/f778c2af-1816-49d2-a2d0-6c814ecef605)
+![image](https://github.com/user-attachments/assets/1b5ca04b-97a1-443d-902d-b386feffd6ca)
+
 
 <br>
 
@@ -230,22 +231,23 @@ Person(Employee, "Работник автомойки", "Просматрива�
 
 ' Контейнеры приложения
 Container(WebApp, "Веб-приложение", "Web Browser", "Пользовательский интерфейс для клиентов и администраторов", "HTML, CSS, JavaScript")
-Container(MobileApp, "Мобильное приложение", "Mobile App", "Пользовательский интерфейс для работников автомойки", "Native App")
+Container(MobileApp, "Мобильное приложение", "Mobile App", "Пользовательский интерфейс для работников автомойки и администратора", "Native App")
 Container(ApiServer, "API Сервер", "API", "Предоставляет API для клиентских приложений", "Node.js, Express")
-ContainerDb(Database, "База данных", "Database", "Хранит данные о клиентах, записях, сервисах", "PostgreSQL")
+ContainerDb(Database, "База данных",  "Хранит данные о клиентах, записях, сервисах")
 ' Взаимодействия
-Rel(Customer, WebApp, "Использует")
+Rel(Customer, MobileApp, "Использует")
 Rel(Admin, WebApp, "Использует")
-Rel(Employee, MobileApp, "Использует")
+Rel(Admin, MobileApp, "Использует")
+Rel(Employee, WebApp, "Использует")
 
 Rel(WebApp, ApiServer, "Использует", "HTTPS")
 Rel(MobileApp, ApiServer, "Использует", "HTTPS")
-Rel(ApiServer, Database, "Использует", "JDBC")
+Rel(ApiServer, Database, "Использует", "DB")
 
-Rel(ApiServer, PaymentSystem, "Отправляет", "Платежи")
-Rel(ApiServer, SmsService, "Отправляет", "СМС уведомления")
-Rel(ApiServer, EmailService, "Отправляет", "Email уведомления")
-Rel(ApiServer, MapService, "Использует", "Получение данных о местоположении")
+Rel(ApiServer, PaymentSystem, "Использует", "Протокол HTTPS")
+Rel(ApiServer, SmsService, "Использует", "Протокол HTTPS")
+Rel(ApiServer, EmailService, "Использует", "Протокол HTTPS")
+Rel(ApiServer, MapService, "Использует", "Протокол HTTPS")
 @enduml
 ```
 
