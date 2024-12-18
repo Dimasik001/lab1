@@ -359,7 +359,11 @@ WebApp -> Customer: Отображает результат оплаты
 
 <h1>OpenAPI</h1>
 
-``` 
+<details>
+  <summary>Код файла</summary>
+
+```
+ 
 openapi: 3.0.0
 info:
   title: Car Wash Service API
@@ -1022,3 +1026,4 @@ components:
           - phone
 ```
 
+</details>
