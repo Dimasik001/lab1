@@ -15,7 +15,7 @@
 <br>
 
 
-UseCase  <br>
+<h1>UseCase</h1>  <br>
 
 ```
 @startuml
