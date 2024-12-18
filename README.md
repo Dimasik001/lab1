@@ -48,7 +48,8 @@ fc --> UC8
   <br>
   
 
-![image](https://github.com/user-attachments/assets/b9060ab3-f308-47a5-9f5d-9c0122c462e9) 
+![image](https://github.com/user-attachments/assets/bc293d97-8f08-4f42-8a65-5d4179bf5275)
+ 
     <br>
      <br>
    <h2>  Сценарии использования </h2> <br>
