@@ -49,9 +49,8 @@ fc --> UC8
   
 
 ![image](https://github.com/user-attachments/assets/bc293d97-8f08-4f42-8a65-5d4179bf5275)
- 
-    <br>
-     <br>
+
+
    <h2>  Сценарии использования </h2> <br>
      UC1 - Найти и выбрать автомойку  <br>
      Участники <br>
