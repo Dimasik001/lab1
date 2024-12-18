@@ -253,7 +253,8 @@ Rel(ApiServer, MapService, "Использует", "Протокол HTTPS")
 
 <h1>Сценарий 1: Запись клиента на мойку</h1>
 
-![image](https://github.com/user-attachments/assets/cbf7e735-47cb-42d9-beb0-9962bcc1fc1e)
+![image](https://github.com/user-attachments/assets/ffc6b2ef-0c4b-4529-9c3f-a9347d7ac87f)
+
 
 ```
 @startuml
@@ -265,12 +266,12 @@ participant Database as "База данных"
 participant SmsService as "СМС Сервис"
 
 Customer -> WebApp: Запрашивает страницу записи
-WebApp -> ApiServer: Запрашивает список доступных сервисов и дат
-ApiServer -> Database: Запрашивает данные о сервисах и расписании
-Database --> ApiServer: Возвращает данные о сервисах и расписании
-ApiServer --> WebApp: Возвращает список сервисов и дат
+WebApp -> ApiServer: Запрашивает список доступных услуг и дат
+ApiServer -> Database: Запрашивает данные о услугах и расписании
+Database --> ApiServer: Возвращает данные о услугах и расписании
+ApiServer --> WebApp: Возвращает список услуг и дат
 WebApp -> Customer: Отображает страницу записи
-Customer -> WebApp: Выбирает сервис, дату и время
+Customer -> WebApp: Выбирает услугу, дату и время
 WebApp -> ApiServer: Отправляет запрос на создание записи
 ApiServer -> Database: Создает новую запись в БД
 Database --> ApiServer: Возвращает ID новой записи
