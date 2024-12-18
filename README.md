@@ -35,14 +35,15 @@ rectangle Мойка{
 fc --> UC1
 fc --> UC2
 fc --> UC3
-UC3 --> UC4
+UC3 --> UC4:(include)
 fc --> UC5
-UC5 --> UC6
+UC5 --> UC6:(include)
 pc --> UC6
 fc --> UC7
 fc --> UC8
 
 @enduml
+
 ```
 
   <br>
