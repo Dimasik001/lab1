@@ -178,7 +178,8 @@ class МОЙКА {
 
 <h1> C4 Model Level 1</h1>
 
-![image](https://github.com/user-attachments/assets/b890440f-a615-4bc6-97f1-792e023daac6)
+![image](https://github.com/user-attachments/assets/cfec1431-23ff-4750-8e10-dd03a9e34517)
+
 
 <br>
 
@@ -188,24 +189,18 @@ class МОЙКА {
 
 LAYOUT_WITH_LEGEND()
 
-System_Ext(PaymentSystem, "Платежная система", "Обработка платежей")
-System_Ext(SmsService, "СМС Сервис", "Отправка СМС уведомлений")
-System_Ext(EmailService, "Email Сервис", "Отправка Email уведомлений")
-System_Ext(MapService, "Картографический сервис", "Отображение местоположения моек")
+System_Ext(PaymentSystem, "СЕРВИСЫ и БД", -------, --------, --------)
 
-Person(Customer, "Клиент", "Записывается на мойку, просматривает услуги")
-Person(Admin, "Администратор", "Управляет сервисами, записями и сотрудниками")
-Person(Employee, "Работник автомойки", "Просматривает назначенные записи, выполняет работу")
 
-System(AutoWashApp, "Учебное приложение автомойки", "Управляет записями, клиентами, сервисами и сотрудниками.")
+Person(Customer, "ПОЛЬЗОВАТЕЛИ")
 
-Rel(Customer, AutoWashApp, "Использует")
-Rel(Admin, AutoWashApp, "Управляет")
-Rel(Employee, AutoWashApp, "Выполняет работу", "Просматривает записи")
-Rel(AutoWashApp, PaymentSystem, "Отправляет", "Платежи")
-Rel(AutoWashApp, SmsService, "Отправляет", "СМС уведомления")
-Rel(AutoWashApp, EmailService, "Отправляет", "Email уведомления")
-Rel(AutoWashApp, MapService, "Использует", "Отображение местоположения моек")
+
+System(AutoWashApp, "ПРИЛОЖЕНИЯ" , -------, --------, --------)
+
+Rel(Customer, AutoWashApp, "Используют")
+Rel(AutoWashApp, PaymentSystem, "Отправляют")
+
+
 
 @enduml
 ```
